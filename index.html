@@ -3,126 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VG</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <title>VG Arena</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- style -->
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="layout" class="pure-g">
-      <div class="sidebar pure-u-1 pure-u-md-1-4">
-          <div class="header">
-              <h1 class="brand-title">A Sample Blog</h1>
-              <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
-  
-              <nav class="nav">
-                  <ul class="nav-list">
-                      <li class="nav-item">
-                          <a class="pure-button" href="http://purecss.io">Pure</a>
-                      </li>
-                  </ul>
-              </nav>
+    <div class="layout d-flex flex-column">     
+      <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a href="index.html" class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white">VG Arena</a>
+      </header> 
+      <div class="d-flex flex-grow-1">
+        <!-- menu start -->
+        <div class="sidebar border border-right">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link d-flex align-items-center gap-2 active">
+                <i class="bi bi-house"></i>Top
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="results.html" class="nav-link d-flex align-items-center gap-2">
+                <i class="bi bi-bar-chart-fill"></i>Results
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- menu end -->
+
+        <!-- main start -->
+        <main class="px-md-4 d-flex flex-column">
+          <h1>VG Arena</h1>
+          <div class="flex-grow-1">
+            <h3>タイムテーブル</h3>
+            <ul>
+              <li>12:00まで
+                <ul>
+                  <li>参加表明（復帰勢多めヴァンガード サーバーの tournament チャンネルで宣言する。）</li>
+                  <li>デッキ登録</li>
+                </ul>
+              </li>
+              <li>19:00ごろ
+                <ul>
+                  <li>トーナメント表の発表</li>
+                </ul>
+              </li>
+              <li>20:00
+                <ul>
+                  <li>大会開始（変更ある場合は事前に連絡）</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>デッキについて</h3>
+            <ul>
+              <li>登録デッキは1人1デッキまで。</li>
+              <li>デッキは、大会当日の12:00までに公式で公開されたカードすべてを使用可能。</li>
+              <li>プロキシの使用可。</li>
+              <li>使用デッキは、大会当日の19:00までにデッキログで登録の上、しらたま宛に連絡する。</li>
+              <li>デッキログにまだ無いカードは適当な既存カード（ex.木谷）で登録して、注釈をチャットでしてもらえればOK。</li>
+              <li>デッキはトナメ終了後にまとめて公開。</li>
+            </ul>
+            <h3>その他</h3>
+            <ul>
+              <li>各試合見学可。コメント不可。マイクを切っておけばOK。</li>
+            </ul>
           </div>
+          <footer>
+            administrator is shiratama.
+          </footer>
+        </main>
+        <!-- main end -->
+
       </div>
-  
-      <div class="content pure-u-1 pure-u-md-3-4">
-          <div>
-              <!-- A wrapper for all the blog posts -->
-              <div class="posts">
-                  <h1 class="content-subhead">Pinned Post</h1>
-  
-                  <!-- A single blog post -->
-                  <section class="post">
-                      <header class="post-header">
-                          <img width="48" height="48" alt="Tilo Mitra&#x27;s avatar" class="post-avatar" src="/img/common/tilo-avatar.png">
-  
-                          <h2 class="post-title">Welcome to Pure</h2>
-  
-                          <p class="post-meta">
-                              By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
-                          </p>
-                      </header>
-  
-                      <div class="post-description">
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          </p>
-                      </div>
-                  </section>
-              </div>
-  
-              <div class="posts">
-                  <h1 class="content-subhead">Recent Posts</h1>
-  
-                  <section class="post">
-                      <header class="post-header">
-                          <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
-  
-                          <h2 class="post-title">Everything You Need to Know About Node.js</h2>
-  
-                          <p class="post-meta">
-                              By <a class="post-author" href="#">Eric Ferraiuolo</a> under <a class="post-category post-category-js" href="#">JavaScript</a>
-                          </p>
-                      </header>
-  
-                      <div class="post-description">
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                          </p>
-                      </div>
-                  </section>
-  
-                  <section class="post">
-                      <header class="post-header">
-                          <img width="48" height="48" alt="Reid Burke&#x27;s avatar" class="post-avatar" src="/img/common/reid-avatar.png">
-  
-                          <h2 class="post-title">Photos from CSSConf and JSConf</h2>
-  
-                          <p class="post-meta">
-                              By <a class="post-author" href="#">Reid Burke</a> under <a class="post-category" href="#">Uncategorized</a>
-                          </p>
-                      </header>
-  
-                      <div class="post-description">
-                          <div class="post-images pure-g">
-                              <div class="pure-u-1 pure-u-md-1-2">
-                                  <a href="http://www.flickr.com/photos/uberlife/8915936174/">
-                                      <img alt="Photo of someone working poolside at a resort"
-                                           class="pure-img-responsive"
-                                           src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
-                                  </a>
-  
-                                  <div class="post-image-meta">
-                                      <h3>CSSConf Photos</h3>
-                                  </div>
-                              </div>
-  
-                              <div class="pure-u-1 pure-u-md-1-2">
-                                  <a href="http://www.flickr.com/photos/uberlife/8907351301/">
-                                      <img alt="Photo of the sunset on the beach"
-                                           class="pure-img-responsive"
-                                           src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
-                                  </a>
-  
-                                  <div class="post-image-meta">
-                                      <h3>JSConf Photos</h3>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </section>
-              </div>
-  
-              <div class="footer">
-                  <div class="pure-menu pure-menu-horizontal">
-                      <ul>
-                          <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                          <li class="pure-menu-item"><a href="http://github.com/pure-css/pure/" class="pure-menu-link">GitHub</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Script -->
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
