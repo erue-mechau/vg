@@ -11,31 +11,24 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="layout d-flex flex-column">     
-      <header class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a href="index.html" class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white">VG Arena</a>
+    <div class="layout d-flex flex-column">
+      <header class="d-flex bg-dark text-white" data-bs-theme="dark">
+        <h3 class="pe-3">VG Arena</h3>
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">
+              <i class="bi bi-house"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="results.html" class="nav-link">
+              <i class="bi bi-bar-chart-fill"></i>Results
+            </a>
+          </li>
+        </ul>
       </header> 
       <div class="d-flex flex-grow-1">
-        <!-- menu start -->
-        <div class="sidebar border border-right">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link d-flex align-items-center gap-2 active">
-                <i class="bi bi-house"></i>Top
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="results.html" class="nav-link d-flex align-items-center gap-2">
-                <i class="bi bi-bar-chart-fill"></i>Results
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- menu end -->
-
-        <!-- main start -->
-        <main class="px-md-4 d-flex flex-column">
-          <h1>VG Arena</h1>
+        <main class="px-md-4 pt-md-4 d-flex flex-column">
           <div class="flex-grow-1">
             <h3>タイムテーブル</h3>
             <ul>
