@@ -4,3 +4,9 @@ body {
 .layout {
     height: 100%;
 }
+.players .card {
+    min-width: 10em;
+    /* background: -moz-linear-gradient(top left, #FFF, #FFC778); 
+    background: -webkit-linear-gradient(top left, #FFF, #FFC778);  */
+    background: linear-gradient(to bottom right, #FFF, #fefeff); 
+}
